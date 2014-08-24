@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="通过Lua学习游戏编程"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-08-24T17:05+0800"/>
+<meta name="generated" content="2014-08-24T17:59+0800"/>
 <meta name="author" content="gnuser   "/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -143,6 +143,7 @@ for the JavaScript code in this tag.
 <li><a href="#sec-4-5">第三个程序</a></li>
 <li><a href="#sec-4-6">第四个程序</a></li>
 <li><a href="#sec-4-7">第五个程序,改写for循环为函数调用</a></li>
+<li><a href="#sec-4-8">第六个程序,求和</a></li>
 </ul>
 </li>
 </ul>
@@ -251,6 +252,12 @@ for the JavaScript code in this tag.
 <li>保存为hello.lua
 </li>
 <li>执行,看结果
+
+
+
+<pre class="src src-sh">&#20320;&#22909;,Lua
+</pre>
+
 </li>
 </ol>
 
@@ -282,7 +289,28 @@ for the JavaScript code in this tag.
 <span style="color: #483d8b;">print</span>(10)  
 </pre>
 
-</li>
+<p>
+  执行结果:
+</p></li>
+</ul>
+
+
+
+
+<pre class="src src-sh">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+
+
+<ul>
 <li>这里和hello.lua有些不同了,print里面没有用双引号了,试试用双引号会怎么样?
 </li>
 <li><b>注意代码里的符号不要使用中文输入法的符号,比如这里的括号,双引号</b>
@@ -352,6 +380,7 @@ for the JavaScript code in this tag.
 <pre class="src src-lua">i = 1
 <span style="color: #483d8b;">print</span>(i)
 </pre>
+
 
 </li>
 <li>修改变量值
@@ -470,10 +499,34 @@ keyboardEnter(<span style="color: #8b2252;">"Z"</span>)
 
 
 <pre class="src src-lua"><span style="color: #a020f0;">function</span> <span style="color: #0000ff;">forPrint</span>(startNum, endNum)
+    <span style="color: #a020f0;">for</span> <span style="color: #a0522d;">i</span>=startNum, endNum <span style="color: #a020f0;">do</span>
+        <span style="color: #483d8b;">print</span>(i)
+    <span style="color: #a020f0;">end</span>
 <span style="color: #a020f0;">end</span>
 
 forPrint(1, 10)
 forPrint(4, 20)
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-8" class="outline-3">
+<h3 id="sec-4-8">第六个程序,求和</h3>
+<div class="outline-text-3" id="text-4-8">
+
+
+
+
+<pre class="src src-lua"><span style="color: #a020f0;">function</span> <span style="color: #0000ff;">sum</span>(startNum, endNum)
+<span style="color: #a020f0;">end</span>
+
+sum(1, 10)
+
+<span style="color: #b22222;">-- </span><span style="color: #b22222;">local result = 1 + 2 + 3 + 4</span>
+<span style="color: #b22222;">-- </span><span style="color: #b22222;">print(result)</span>
 </pre>
 
 </div>
